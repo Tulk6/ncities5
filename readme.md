@@ -1,1 +1,1 @@
-site at: [itisacrouton.neocities.org](https://www.itisacrouton.neocities.org)
+site at: [itisacrouton.neocities.org](http://itisacrouton.neocities.org)
