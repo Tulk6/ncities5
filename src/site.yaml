@@ -9,14 +9,32 @@
       - title: Updates
         file: updates
         desc: status update
+      - title: Projects
+        file: projects
+        desc: projects
       - title: Links
         file: links
         desc: ..links
       
     name: it IS a crouton
     status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
-    
 
+
+
+#<------UPDATES------>
+- Update:
+    title: second thoughts
+    date: 2026-01-09 21:43
+    content: okay upon further reflection i need a site w/ more personality... idk if i try and make this one less clinical or just yk from scratch. need little sections for all my multitudes yk...
+
+- Update:
+    title: new site
+    date: 2026-01-07 15:00
+    content: i think i have an operational website... still not sure about the theme but it is up and running. maybe lacking a litle personality... i'll get there fr
+
+
+
+#<------ISSUES------>
 - Issue:
     title: nzny
     slug: nzny
@@ -41,16 +59,21 @@
         the horse didnt rlly like me and nor did the starfish. i like them both though. and the building.
     thumbnail: photos/DSCF0228.JPG
 
-- Update:
-    title: second thoughts
-    date: 2026-01-09 21:43
-    content: okay upon further reflection i need a site w/ more personality... idk if i try and make this one less clinical or just yk from scratch. need little sections for all my multitudes yk...
 
-- Update:
-    title: new site
-    date: 2026-01-07 15:00
-    content: i think i have an operational website... still not sure about the theme but it is up and running. maybe lacking a litle personality... i'll get there fr
 
+#<-----PROJECTS------>
+- Project:
+    title: internetsupermagazine
+    slug: internetsupermagazine
+    desc: printable web collation
+    content: |
+        This is my new thingo..
+
+        Hello my name is james
+
+
+        
+#<-----LINKS------>
 - Link:
     title: erm
     url: https://google.com

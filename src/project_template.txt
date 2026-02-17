@@ -1,0 +1,21 @@
+<!doctype HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{title}} - itisacrouton</title>
+<link type="text/css" rel="stylesheet" href="../style.css">
+<link type="text/css" rel="stylesheet" href="../issue.css">
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='../index.html'>ITISACROUTON</a></h1>
+        <hr>
+        
+        <h2>{{title}}</h2>
+        <p class="byline">{{date}}</p>
+        {{{content}}}
+    </div>
+</body>
+</html>

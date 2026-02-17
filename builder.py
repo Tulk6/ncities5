@@ -60,6 +60,9 @@ class Builder:
         for issue in self.db['Issue']:
             self.build_issue_page(issue)
 
+        for project in self.db['Project']:
+            self.build_project_page(project)
+
     def build_page(self, page):
         with open(f'src/{page}.txt') as f:
             rendered = self.render_template(self.db, f.read())
@@ -73,6 +76,13 @@ class Builder:
             rendered = self.render_template(issue, f.read())
 
         with open(f'site/issues/{issue["slug"]}.html', 'w') as f:
+            f.write(rendered)
+
+    def build_project_page(self, project):
+        with open(f'src/project_template.txt') as f:
+            rendered = self.render_template(project, f.read())
+
+        with open(f'site/projects/{project["slug"]}.html', 'w') as f:
             f.write(rendered)
 
     def render_template(self, data, template):

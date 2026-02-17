@@ -1,0 +1,14 @@
+.summary {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    margin: 2px;
+    height: 100%;
+    display: flex;
+    vertical-align: top;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+.summarytext>h2{
+    margin-top: 0px;
+}

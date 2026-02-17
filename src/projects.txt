@@ -1,0 +1,25 @@
+<!doctype HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{Site.name}}</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="projects.css">
+
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <hr>
+
+        {{#Project}}
+        <div class='summary'>
+            <h2><a href="projects/{{slug}}.html">{{title}}</a></h2>
+            <marquee><p'>{{desc}}</p></marquee>
+        </div>
+        {{/Project}}
+    </div>
+</body>
+</html>
