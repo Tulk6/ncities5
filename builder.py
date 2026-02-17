@@ -29,11 +29,15 @@ class Builder:
                 if item_class == 'Site':
                     self.db['Site'] = item['Site']
                     continue
-                elif item_class == 'Issue':
+                elif item_class == 'Issue' or item_class == 'Project':
                     item[item_class]['content'] = self.content_to_html(item[item_class]['content'])
                 if item_class not in list(self.db.keys()):
                     self.db[item_class] = []
                 self.db[item_class].append(item[item_class])
+
+            self.db['Site']['status'] = f"{self.db['Update'][0]['date']} - {self.db['Update'][0]['title']}"
+
+            #print(self.db['Site']['status']_
 
     def load_photos(self):
         self.db['Photo'] = []
@@ -108,8 +112,10 @@ class Builder:
                     html += f'<a href="../photos/{arg}"><img src="../photos/{arg}"></a>'
                 elif form == 'b':
                     html += f'<b>{arg}</b>'
-                elif form == 'i':
+                elif form == 'e':
                     html += f'<i>{arg}</i>'
+                elif form == 'l':
+                    html += f'<a href="{arg}">{arg}</a>'
 
             elif char == '\n':
                 html += '<br>'

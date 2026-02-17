@@ -17,13 +17,18 @@
         desc: ..links
       
     name: it IS a crouton
-    status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
+    #status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
 
 
 
 #<------UPDATES------>
 - Update:
-    title: second thoughts
+    title: finally added more stuff! project section
+    date: 2026-02-17 14:56
+    content: have added a new section for projects but nothing there rn. also still need to add links. and trasnfer a new card.batt post to website
+
+- Update:
+    title: having second about design... no personality
     date: 2026-01-09 21:43
     content: okay upon further reflection i need a site w/ more personality... idk if i try and make this one less clinical or just yk from scratch. need little sections for all my multitudes yk...
 
@@ -67,10 +72,7 @@
     slug: internetsupermagazine
     desc: printable web collation
     content: |
-        This is my new thingo..
-
-        Hello my name is james
-
+        rn this is empty but check it out here -> \l{https://github.com/Tulk6/internetsupermagazine}
 
         
 #<-----LINKS------>
