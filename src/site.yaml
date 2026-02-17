@@ -2,19 +2,19 @@
     pages: 
       - title: Card.Batt
         file: issues
-        desc: collections of photos ive taken
+        desc: collections of photos ive taken in albums w/ music!
       - title: Photos
         file: photos
-        desc: all the photos ive uploaded
+        desc: all the photos ive uploaded to this site
       - title: Updates
         file: updates
-        desc: status update
+        desc: site updates and short posts
       - title: Projects
         file: projects
-        desc: projects
+        desc: things i am working on - will update pages as i go
       - title: Links
         file: links
-        desc: ..links
+        desc: incl. middle english libraries and mobile phone museums
       
     name: it IS a crouton
     #status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
@@ -22,6 +22,11 @@
 
 
 #<------UPDATES------>
+- Update:
+    title: added links! check them out
+    date: 2026-02-17 21:25
+    content: added links to the links page -> wanna categorise them and add more but will do for now :)
+    
 - Update:
     title: finally added more stuff! project section
     date: 2026-02-17 14:56
@@ -77,6 +82,116 @@
         
 #<-----LINKS------>
 - Link:
-    title: erm
-    url: https://google.com
-    desc: i have nothing rn 
+    title: MediaRemix
+    url: https://www.pentacom.jp/soft/
+    desc: random software incl. paper computer which is very very very cool
+
+- Link:
+    title: icon basics
+    url: https://www.pentacom.jp/icon/index.html
+    desc: cool icons and site
+
+- Link:
+    title: Colour Problems
+    url: https://colorproblems.art/
+    desc: a web recreation of a 1902 colour theory book analyser thing...
+
+- Links:
+    title: Wiby
+    url: https://wiby.me/
+    desc: awesome search engine for classic web
+
+- Link:
+    title: Werner's Nomenclature of Colours
+    url: https://www.c82.net/werner/#preface
+    desc: similar but this time all colour names - v cool
+
+- Link: 
+    title: Half Life 2 Shading
+    url: https://www.c82.net/werner/#preface
+    desc: a valve slideshow about half life two's shading
+
+- Link:
+    title: bibliotheca Augustana
+    url: https://www.hs-augsburg.de/~harsch/augustana.html
+    desc: a library of texts in ancient greek and latin and french and english and more
+
+- Links:
+    title: Mobile Phone Museum
+    url: https://www.mobilephonemuseum.com/catalogue
+    desc: mobile phone museum
+    
+- Link:
+    title: YourSmileys
+    url: https://yoursmiles.org/
+    desc: lots of animated emoticons
+
+- Link:
+    title: Tiny Tool Directory
+    url: https://tinytools.directory/
+    desc: a whole bunch of tools for a whole bunch of things
+
+- Link:
+    title: Texture Town
+    url: https://textures.neocities.org/
+    desc: cool textures
+
+- Link:
+    title: Open RSS
+    url: https://openrss.org/
+    desc: lots of rss tools - feeds for diff sites
+
+- Link:
+    title: notes from earth
+    url: https://notesfromearth.neocities.org/
+    desc: cool site
+
+- Links: 
+    title: Marginalia
+    url: https://marginalia-search.com/
+    desc: like wiby but broader
+
+- Links:
+    title: Panlexicon
+    url: https://panlexicon.com/
+    desc: like a thesaurus but cooler
+
+- Link:
+    title: Letters from the past
+    url: https://victorianweb.org/previctorian/letters/lettersov.html
+    desc: letters from the past
+
+- Link:
+    title: David Byrne radio
+    url: https://www.mixcloud.com/Todomundo/
+    desc: david byrne posts playlists more or less weekly v cool
+
+- Link:
+    title: Public Domain Review
+    url: https://publicdomainreview.org/
+    desc: online journal focused on work in public domain
+
+- Link:
+    title: National Geographic issues from the 90s
+    url: https://archive.org/details/1990-ngs-pdf/295EC01A.JPG
+    desc: what the title says
+
+- Link:
+    title: Whole Earth Index
+    url: https://wholeearth.info/
+    desc: archive of the whole earth catalogue and others very interesting articles
+
+- Link:
+    title: Archive Fashion
+    url: https://www.archivepdf.net/
+    desc: i know nothing about high fashion but the magazines r cool
+
+- Link:
+    title: Standard EBooks
+    url: https://standardebooks.org/
+    desc: public domain ebooks very nicely formatted
+
+- Links:
+    title: METS
+    url: https://metseditions.org/
+    desc: middle english texts
