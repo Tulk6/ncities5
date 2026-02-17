@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{Site.name}}</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="updates.css">
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <hr>
+        {{#Update}}
+        <div class='blogentry'>
+            <h2>{{title}}</h2><p class="byline">{{date}}</p><p>{{content}}</p>
+        </div>
+        {{/Update}}
+    </div>
+</body>
+
+</html>

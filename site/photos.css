@@ -1,0 +1,21 @@
+
+.photogrid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.photoitem {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-width: 1px;
+    padding: 1px 1px 1px 1px;
+}
+
+.thumbnail{
+    max-width: 100%;
+    height: auto;
+}
+
+.photoitem>p{
+    line-height: 0px;
+}

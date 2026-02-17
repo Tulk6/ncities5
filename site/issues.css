@@ -1,0 +1,22 @@
+.summary {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    margin: 2px;
+}
+
+.summarytext{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+    max-width: 60%;
+}
+
+.summarytext>h2{
+    margin-top: 0px;
+}
+
+.summary>img{
+    max-width: 30%;
+    height: auto;
+}

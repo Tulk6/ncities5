@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{Site.name}}</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <p class="byline">{{Site.status}}</p>
+        <hr>
+
+        <div class='contents'>
+            {{#Site.pages}}
+            <h2><a href='{{file}}.html'>{{title}}</a></h2>
+            <p>&emsp;<i>{{desc}}</i></p>
+            {{/Site.pages}}
+        </div>
+    </div>
+</body>
+</html>

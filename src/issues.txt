@@ -1,0 +1,29 @@
+<!doctype HTML>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{Site.name}}</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="issues.css">
+
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='index.html'>CARD.BATT</a></h1>
+        <hr>
+
+        {{#Issue}}
+        <div class='summary'>
+            <img src='{{thumbnail}}'>
+            <div class='summarytext'>
+                <h2><a href="issues/{{slug}}.html">{{title}}</a></h2>
+                <p class="byline">{{date}}</p>
+                <marquee><p'>{{desc}}</p></marquee>
+            </div>
+        </div>
+        {{/Issue}}
+    </div>
+</body>
+</html>

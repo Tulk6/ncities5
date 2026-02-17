@@ -1,0 +1,57 @@
+- Site:
+    pages: 
+      - title: Card.Batt
+        file: issues
+        desc: collections of photos ive taken
+      - title: Photos
+        file: photos
+        desc: all the photos ive uploaded
+      - title: Updates
+        file: updates
+        desc: status update
+      - title: Links
+        file: links
+        desc: ..links
+      
+    name: it IS a crouton
+    status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
+    
+
+- Issue:
+    title: nzny
+    slug: nzny
+    date: 2025-01-07 16:00
+    desc: first webpost!
+    audio: https://od.lk/s/MjlfNTg0MTM0OTNf/when_things_come_falling_down.mp3
+    content: |
+        \i{DSCF0228.JPG}
+        \i{DSCF0025.JPG}
+        \i{DSCF0068.JPG}
+        \i{DSCF0250.JPG}
+        \i{DSCF0323.JPG}
+        \i{DSCF0187.JPG}
+        \i{DSCF0898.JPG}
+        \i{DSCF0889.JPG}
+        \i{DSCF0242.JPG}
+        \i{DSCF0702.JPG}
+        \i{DSCF0343.JPG}
+        \i{DSCF0209.JPG}
+        \i{DSCF0318.JPG}
+        \i{DSCF0974.JPG}
+        the horse didnt rlly like me and nor did the starfish. i like them both though. and the building.
+    thumbnail: photos/DSCF0228.JPG
+
+- Update:
+    title: second thoughts
+    date: 2026-01-09 21:43
+    content: okay upon further reflection i need a site w/ more personality... idk if i try and make this one less clinical or just yk from scratch. need little sections for all my multitudes yk...
+
+- Update:
+    title: new site
+    date: 2026-01-07 15:00
+    content: i think i have an operational website... still not sure about the theme but it is up and running. maybe lacking a litle personality... i'll get there fr
+
+- Link:
+    title: erm
+    url: https://google.com
+    desc: i have nothing rn 

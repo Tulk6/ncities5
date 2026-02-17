@@ -1,0 +1,65 @@
+:root {
+    --fg-colour: #000000;
+    --active-colour: #1654AF;
+}
+
+@font-face {
+    font-family: junicode;
+	src: url(fonts/Junicode-CondLight.otf);
+}
+
+@font-face {
+    font-family: arial;
+	src: url(fonts/arialn.ttf);
+}
+
+@font-face {
+    font-family: folio;
+	src: url(fonts/Folio-Std-Light.ttf);
+}
+
+@font-face {
+    font-family: hiroshige;
+    src: url(fonts/HiroshigeStd-Book.ttf);
+}
+
+@font-face {
+    font-family: hiroshige;
+    font-style: italic;
+    src: url(fonts/HiroshigeStd-BookItalic.ttf);
+}
+
+h1 {
+    font-family: junicode;
+    font-size: 40pt;
+    letter-spacing: -3pt;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 15pt;
+}
+
+p {
+    font-family: hiroshige;
+}
+
+a {
+    color: var(--fg-colour);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--active-colour);
+}    
+
+.centrewindow {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+p.byline {
+    font-family: arial;
+}
