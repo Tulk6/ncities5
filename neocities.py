@@ -1,4 +1,4 @@
-import requests
+import requests, os
 
 class Neocities:
     def __init__(self, api_key=None):
@@ -21,11 +21,15 @@ class Neocities:
         else:
             raise(NeocitiesAPIError(response))
 
+    ###<------BASE NEOCITIES API FUNCTIONS------>
+
     def upload(self, *files):
         payload = {}
         for (local_path, path_on_server) in files:
             payload[path_on_server] = open(local_path, 'rb')
 
+        print(payload)
+        
         r = self._post('upload', files=payload)
 
         return self._handle_response(r)
@@ -59,8 +63,24 @@ class Neocities:
         return info
 
 
+    ###<------ADDED FUNCTIONS------>
+
+    def upload_folder(self, local_source_path):
+        file_paths = []
+        for path, subdirs, files in os.walk(local_source_path):
+            for file in files:
+                local_path = (path+'\\'+file).replace('\\', '/') #neocities wants posix format paths
+                server_path = local_path[len(local_source_path):]
+                file_paths.append((local_path, server_path)) #assumes that path on server same as local
+
+        self.upload(*file_paths)
+
+    def sync_server(self, local_source_path):
+        pass
+
+
 class NeocitiesAPIError(Exception):
-    def __init__(self, method, response_json):
+    def __init__(self, response):
         self.response = response
         self.response_json = response.json()
 
