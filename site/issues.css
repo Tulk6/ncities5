@@ -20,3 +20,8 @@
     max-width: 30%;
     height: auto;
 }
+
+marquee {
+    width: 100%;
+    margin: 2px;
+}

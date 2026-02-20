@@ -15,13 +15,25 @@
       - title: Links
         file: links
         desc: incl. middle english libraries and mobile phone museums
+      - title: About
+        file: about
+        desc: sign my guestbook!
       
     name: it IS a crouton
-    #status: 09/01/26 21:42:05 hmm have already changed my mind i think entirely theme wise...
 
 
 
 #<------UPDATES------>
+- Update:
+    title: tidying up more
+    date: 2026-02-20 12:53
+    content: thinking that maybs the style for the card.batt section should be completely different. a subsite if u will... also need a favicon
+    
+- Update:
+    title: added stuff about my site generator
+    date: 2026-02-17 21:25
+    content: in the projects section there is now stuff about the static site generator i built for this site. a little shoddy.
+
 - Update:
     title: added links! check them out
     date: 2026-02-17 21:25
@@ -78,6 +90,35 @@
     desc: printable web collation
     content: |
         rn this is empty but check it out here -> \l{https://github.com/Tulk6/internetsupermagazine}
+
+- Project:
+    title: ncities5
+    slug: ncities5
+    desc: fifth (current) version of this site
+    content: >
+        19/02/26
+        Here is the github -> \l{https://github.com/Tulk6/ncities5}
+
+        
+        Site is made using a static site generator I am writing, which uses the mustache templating 
+        engine and a big YAML file with all the posts and links and sections and this very text I'm writing rn!
+
+
+        A python script goes through a source directory which contains a) this YAML file, and b) the templates and then provides the 
+        dict that it gets from reading the YAML file to the templates which do all the rest. Also does stuff to make a seperate file for each project
+        and article and so on. It then puts all the compiled HTML into another folder along with CSS ive written and the fonts and images and so on, 
+        and then another program I've written to interface with the neocities API uploads all the files, and syncs the local folder to the server 
+        one. Hopefully 🤞🤞 this all means that although i already rlly wanna change the design and layout and so on of my site, doing so should only
+        rlly mean rewriting the templates and the css, and not having to rewrite all the content itself. which I thought would be nice.
+
+
+        Still need to add some things (e.g. smth to resize photos that I upload so they take up less room &c &c but that can wait). 
+
+
+        Also rlly recommend mustache. Very fun.
+
+
+        Okee buh bye.
 
         
 #<-----LINKS------>
