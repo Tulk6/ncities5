@@ -17,7 +17,7 @@
         {{#Project}}
         <div class='summary'>
             <h2><a href="projects/{{slug}}.html">{{title}}</a></h2>
-            <marquee><p'>{{desc}}</p></marquee>
+            <marquee><p>{{desc}}</p></marquee>
         </div>
         {{/Project}}
     </div>

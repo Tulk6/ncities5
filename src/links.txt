@@ -10,7 +10,6 @@
 <body>
     <div class='centrewindow'>
         <h1><a href='index.html'>ITISACROUTON</a></h1>
-        
         <hr>
 
         <div class='contents'>

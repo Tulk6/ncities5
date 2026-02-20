@@ -20,7 +20,7 @@
             <div class='summarytext'>
                 <h2><a href="issues/{{slug}}.html">{{title}}</a></h2>
                 <p class="byline">{{date}}</p>
-                <marquee><p'>{{desc}}</p></marquee>
+                <marquee><p>{{desc}}</p></marquee>
             </div>
         </div>
         {{/Issue}}

@@ -10,15 +10,9 @@
 <body>
     <div class='centrewindow'>
         <h1><a href='index.html'>ITISACROUTON</a></h1>
-        <p class="byline">{{Site.status}}</p>
         <hr>
-
-        <div class='contents'>
-            {{#Site.pages}}
-            <h2><a href='{{file}}.html'>{{title}}</a></h2>
-            <p>&emsp;{{desc}}</p>
-            {{/Site.pages}}
-        </div>
+        <p>sign my guestbook here -> <a href="https://itisacrouton.atabook.org">https://itisacrouton.atabook.org/</a></p>
+        <p>:)</p>
     </div>
 </body>
 </html>
