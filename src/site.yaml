@@ -149,7 +149,7 @@
 
 - Link: 
     title: Half Life 2 Shading
-    url: https://www.c82.net/werner/#preface
+    url: https://valvearchive.com/Presentations/GDC%202004/d3dtutorial10_half-life2_shading.pdf
     desc: a valve slideshow about half life two's shading
 
 - Link:
@@ -232,7 +232,66 @@
     url: https://standardebooks.org/
     desc: public domain ebooks very nicely formatted
 
-- Links:
+- Link:
     title: METS
     url: https://metseditions.org/
     desc: middle english texts
+
+
+#<-----MEDIA------>
+- Media:
+    category: book
+    title: Tess of the D'Urbervilles
+    thumb: Y
+    review: 🤯
+    desc: >
+        one of my favourite books ever. could talk adn talk about it but probs without saying much...
+        the entirety of the book is full of a hazy overexposed glowing atmosphere which i am yet to find elsewhere,
+        and the actual plot itself..
+
+- Media:
+    category: book
+    title: Catch 22
+    thumb: Y
+    review: 🤩
+    desc: >
+        my other favourite book. similar to tess could talk a lot about it but unlike tess i think i could actually say something.
+        very funny. funnier than any other book i've read and any movie or tv show or anything. and then all of a sudden the humour 
+        drops away and your left alone in the night in rome or in the back of a bomber or with major major major major on the basketball
+        court. poor major major major major
+
+- Media:
+    category: series
+    title: Buffy the Vampire Slayer
+    thumb: Y
+    review: 🧛
+    desc: >
+        easily the best tv show. or maybe not easily but pretty easily. some people think the title sounds dumb and some people think the synopsis sounds 
+        dumb but trust me its not. the whole show just works incredibly
+
+
+- Media:
+    category: series
+    title: Twin Peaks
+    thumb: Y
+    review: 🗻
+    desc: >
+        i doubt i really have much to add. i love major garland briggs. 
+
+- Media:
+    category: book
+    title: Of Human Bondage
+    thumb: Y
+    review: 🧥
+    desc: >
+        a character in buffy said this was their comfort book and idk if it quite is for me but it could be. i get it. something about it you could 
+        just sink into and curl up.
+
+- Media:
+    category: book
+    title: Moby Dick
+    thumb: Y
+    review: 🐳
+    desc: >
+        i LOVE moby dick. easily up there. i love ishmael. i love queequeg. i love that one scene in the spouter inn when they curl up and ishmael says 
+        that he feels like " the one warm spark in the heart of an arctic crystal" and thats how i feel sitting in the cold reading.
