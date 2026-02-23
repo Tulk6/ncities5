@@ -9,7 +9,7 @@
 
 <body>
     <div class='centrewindow'>
-        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <p class="byline">{{Site.status}}</p>
         <hr>
 
@@ -19,7 +19,7 @@
             clap my site...<a href="//clap.fc2.com/post/itisacrouton/?url=https%3A%2F%2Fitisacrouton.neocities.org&title=itisacrouton" target="_blank" title="Web Clap by FC2"><img src="//clap.fc2.com/images/button/red/itisacrouton?url=https%3A%2F%2Fitisacrouton.neocities.org&amp;lang=en" alt="Web Clap by FC2" style="border:none;" /></a>
             <a href="https://itisacrouton.atabook.org/">sign my guestbook!</a></p>
             {{#Site.pages}}
-            <h2><a href='{{file}}.html'>{{title}}</a></h2>
+            <p><a href='{{file}}.html'>{{title}}</a></p>
             <p>&emsp;{{desc}}</p>
             {{/Site.pages}}
             

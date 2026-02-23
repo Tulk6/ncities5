@@ -10,7 +10,7 @@
 
 <body>
     <div class='centrewindow'>
-        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
         {{#Media}}
             <div class="mediaitem">

@@ -66,16 +66,21 @@ a:hover {
 p > a {
     color: var(--active-colour);
     text-decoration: underline;
-}
-
-h1 > a{
-    color: var(--fg-colour);
-    text-decoration: none;
-}    
+}   
 
 /*p > a:hover {
     color: var(--fg-colour);
 }*/
+
+#sitetitle > a{
+    color: var(--fg-colour);
+    text-decoration: none;
+}
+
+#sitetitle > a:hover{
+    color: var(--active-colour);
+    text-decoration: none;
+}
 
 .centrewindow {
     width: 600px;
