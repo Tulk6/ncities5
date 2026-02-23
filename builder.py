@@ -12,16 +12,50 @@ class Builder:
         self.load_photos()
 
     def add_photos(self):
+        #this is all a little odd so i figure you deserve an explanation
+        #photos are taken from the src/photos folder
+        #converted to gifs with a palette
+        #resized to 640x480
+        #then copied to the site/photos folder
+        #but....
+        #because GIFS cant have exif data and i want to keep some of the metadata
+        #we extract to parts of the metadata (the time the photo was taken and the desc)
+        #however not all cameras store this info in the same place
+        #first for datestring we look in DateTimeOriginal 
+        #but if that doesnt exist we use DateTime
+        #for desc first we look in ImageDescription
+        #but if there isnt one we instead just use the camera model
+        #and we store both of these in the GIF comment delimited with |
         for file in os.listdir('src/photos'):
-            img = Image.open(f'src/photos/{file}')
+            name, ext = file.split('.')
+            img = Image.open(f'src/photos/{name}.{ext}')
             exif = img.getexif()
             img.thumbnail((640, 480))
-            img.save(f'site/photos/{file}', exif=exif)
-            os.remove(f'src/photos/{file}')
+            #img = img.convert(mode='P', palette=Image.Palette.ADAPTIVE, colors=128, dither=Image.Dither.FLOYDSTEINBERG)
+            #date_str = date_str = exif.get_ifd(PIL.ExifTags.IFD.Exif)[36867]
+            #if date_str is None:
+                #exif.get(306)
+            #desc = exif.get(270)
+            #if desc is None:
+                #desc = exif.get(272)
+            #desc = desc.replace('\x00', '')
+            #info = f'{date_str}|{desc}'
+            img.save(f'site/photos/{name}.jpg', exif=exif)
+            #os.remove(f'src/photos/{name}.{ext}')
+
+    def get_info_from_exif(self, exif):
+        date_str = date_str = exif.get_ifd(PIL.ExifTags.IFD.Exif)[36867]
+        if date_str is None:
+            exif.get(306)
+        desc = exif.get(270)
+        if desc is None:
+            desc = exif.get(272)
+        desc = desc.replace('\x00', '')
+        return date_str, desc
 
     def load_site(self):
         self.db = {}
-        with open('src/site.yaml') as f:
+        with open('src/site.yaml', encoding='utf8') as f:
             site = yaml.safe_load(f)
 
             for item in site:
@@ -29,8 +63,8 @@ class Builder:
                 if item_class == 'Site':
                     self.db['Site'] = item['Site']
                     continue
-                elif item_class == 'Issue' or item_class == 'Project':
-                    item[item_class]['content'] = self.content_to_html(item[item_class]['content'])
+                if 'richcontent' in item[item_class]:
+                    item[item_class]['content'] = self.content_to_html(item[item_class]['richcontent'])
                 if item_class not in list(self.db.keys()):
                     self.db[item_class] = []
                 self.db[item_class].append(item[item_class])
@@ -43,10 +77,8 @@ class Builder:
         self.db['Photo'] = []
         for file in os.listdir('site/photos'):
             img = Image.open(f'site/photos/{file}')
-            exif = img.getexif()
-            datetime_taken = datetime.datetime.strptime(exif.get(306), '%Y:%m:%d %H:%M:%S')
-            desc = exif.get(0x010E)
-            #print(timestamp)
+            date_string,desc = self.get_info_from_exif(img.getexif())
+            datetime_taken = datetime.datetime.strptime(date_string, '%Y:%m:%d %H:%M:%S')
             self.db['Photo'].append({
                 'file': f'photos/{file}',
                 'date': datetime_taken.strftime('%d/%m/%y %H:%M:%S'),
@@ -68,25 +100,25 @@ class Builder:
             self.build_project_page(project)
 
     def build_page(self, page):
-        with open(f'src/{page}.txt') as f:
+        with open(f'src/{page}.txt', encoding='utf8') as f:
             rendered = self.render_template(self.db, f.read())
 
-        with open(f'site/{page}.html', 'w') as f:
+        with open(f'site/{page}.html', 'w', encoding='utf8') as f:
             f.write(rendered)
 
 
     def build_issue_page(self, issue):
-        with open(f'src/issue_template.txt') as f:
+        with open(f'src/issue_template.txt', encoding='utf8') as f:
             rendered = self.render_template(issue, f.read())
 
-        with open(f'site/issues/{issue["slug"]}.html', 'w') as f:
+        with open(f'site/issues/{issue["slug"]}.html', 'w', encoding='utf8') as f:
             f.write(rendered)
 
     def build_project_page(self, project):
-        with open(f'src/project_template.txt') as f:
+        with open(f'src/project_template.txt', encoding='utf8') as f:
             rendered = self.render_template(project, f.read())
 
-        with open(f'site/projects/{project["slug"]}.html', 'w') as f:
+        with open(f'site/projects/{project["slug"]}.html', 'w', encoding='utf8') as f:
             f.write(rendered)
 
     def render_template(self, data, template):
@@ -109,7 +141,7 @@ class Builder:
                     character_index += 1
                     
                 if form == 'i':
-                    html += f'<a href="../photos/{arg}"><img src="../photos/{arg}"></a>'
+                    html += f'<a href="../photos/{arg}" target="_blank"><img src="../photos/{arg}"></a>'
                 elif form == 'b':
                     html += f'<b>{arg}</b>'
                 elif form == 'e':
