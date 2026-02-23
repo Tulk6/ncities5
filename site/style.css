@@ -23,10 +23,15 @@
     src: url(fonts/HiroshigeStd-Book.ttf);
 }
 
-@font-face {
+/*@font-face {
     font-family: hiroshige;
     font-style: italic;
     src: url(fonts/HiroshigeStd-BookItalic.ttf);
+}*/
+
+@font-face {
+    font-family: cjk;
+    src: url(fonts/simsun_subset.ttf);
 }
 
 h1 {
@@ -36,22 +41,41 @@ h1 {
 }
 
 h2 {
-    font-family: arial;
+    font-family: hiroshige;
     font-size: 15pt;
 }
 
 p {
-    font-family: hiroshige;
+    font-family: cjk;
+    font-size: 18px;
 }
 
 a {
-    color: var(--fg-colour);
-    text-decoration: none;
+    color: var(--active-colour);
+    //text-decoration: none;
+}
+
+a:visited {
+    color: var(--active-colour);
 }
 
 a:hover {
+    color: var(--fg-colour);
+}
+
+p > a {
     color: var(--active-colour);
+    text-decoration: underline;
+}
+
+h1 > a{
+    color: var(--fg-colour);
+    text-decoration: none;
 }    
+
+/*p > a:hover {
+    color: var(--fg-colour);
+}*/
 
 .centrewindow {
     width: 600px;
@@ -63,3 +87,4 @@ a:hover {
 p.byline {
     font-family: arial;
 }
+

@@ -1,11 +1,18 @@
+#need to add
+#    currently reading watching etc
+#    fix media log
+#    improve about page
+#    find room for more colour
+#    switch to css grid??
+#    add a welcome section
+#    add links to profiles
+#    theme overhaul...
+
 - Site:
     pages: 
       - title: Card.Batt
         file: issues
         desc: collections of photos ive taken in albums w/ music!
-      - title: Photos
-        file: photos
-        desc: all the photos ive uploaded to this site
       - title: Updates
         file: updates
         desc: site updates and short posts
@@ -15,6 +22,12 @@
       - title: Links
         file: links
         desc: incl. middle english libraries and mobile phone museums
+      - title: Media
+        file: media
+        desc: my media log - a little incomplete
+      - title: Photos
+        file: photos
+        desc: all the photos ive uploaded to this site
       - title: About
         file: about
         desc: sign my guestbook!
@@ -24,6 +37,11 @@
 
 
 #<------UPDATES------>
+- Update:
+    title: new photos
+    date: 2026-02-23 11:43
+    content: new photos. Dreading having to tutor people tomorrow... Not dreading doing uni orientation! D= =D
+    
 - Update:
     title: tidying up more
     date: 2026-02-20 12:53
@@ -40,6 +58,7 @@
     content: added links to the links page -> wanna categorise them and add more but will do for now :)
     
 - Update:
+
     title: finally added more stuff! project section
     date: 2026-02-17 14:56
     content: have added a new section for projects but nothing there rn. also still need to add links. and trasnfer a new card.batt post to website
@@ -58,28 +77,54 @@
 
 #<------ISSUES------>
 - Issue:
+    title: preun
+    slug: preun
+    date: 2025-02-23 09:26
+    desc: got new cameras..
+    audio: https://od.lk/s/MjlfNTk1ODE2Mzdf/peaches.mp3
+    audio_title: peaches.mp3
+    #peaches
+    richcontent: |
+        \i{100_6206.jpg}
+        \i{100_6126.jpg}
+        \i{100_6363.jpg}
+        \i{DSCF0446.jpg}
+        \i{DSCF0435.jpg}
+        \i{DSCF0510.jpg}
+        \i{DSCF0458.jpg}
+        \i{100_6255.jpg}
+        \i{100_6377.jpg}
+        \i{DSCF0455.jpg}
+        \i{DSCF0513.jpg}
+        \i{100_6138.jpg}
+        \i{100_6214.jpg}
+        \i{100_6206.jpg}
+        AAAAH what was that... i have new cameras i hope that doesnt change things between you and me (the date is 2006 bcos it doesn't up go up to 2026) also check out my radical website (a little meta cos ur looking at it rn) + these ties remind me of mitch and cam + i made a rlly nice berry pie.... dam fine. ahh there it is again.
+    thumbnail: photos/100_6206.jpg
+    
+- Issue:
     title: nzny
     slug: nzny
     date: 2025-01-07 16:00
     desc: first webpost!
     audio: https://od.lk/s/MjlfNTg0MTM0OTNf/when_things_come_falling_down.mp3
-    content: |
-        \i{DSCF0228.JPG}
-        \i{DSCF0025.JPG}
-        \i{DSCF0068.JPG}
-        \i{DSCF0250.JPG}
-        \i{DSCF0323.JPG}
-        \i{DSCF0187.JPG}
-        \i{DSCF0898.JPG}
-        \i{DSCF0889.JPG}
-        \i{DSCF0242.JPG}
-        \i{DSCF0702.JPG}
-        \i{DSCF0343.JPG}
-        \i{DSCF0209.JPG}
-        \i{DSCF0318.JPG}
-        \i{DSCF0974.JPG}
+    audio_title: when_things_come_falling_down.mp3
+    richcontent: |
+        \i{DSCF0228.jpg}
+        \i{DSCF0025.jpg}
+        \i{DSCF0068.jpg}
+        \i{DSCF0250.jpg}
+        \i{DSCF0323.jpg}
+        \i{DSCF0187.jpg}
+        \i{DSCF0898.jpg}
+        \i{DSCF0889.jpg}
+        \i{DSCF0242.jpg}
+        \i{DSCF0702.jpg}
+        \i{DSCF0343.jpg}
+        \i{DSCF0209.jpg}
+        \i{DSCF0974.jpg}
         the horse didnt rlly like me and nor did the starfish. i like them both though. and the building.
-    thumbnail: photos/DSCF0228.JPG
+    thumbnail: photos/DSCF0228.jpg
 
 
 
@@ -88,14 +133,14 @@
     title: internetsupermagazine
     slug: internetsupermagazine
     desc: printable web collation
-    content: |
+    richcontent: |
         rn this is empty but check it out here -> \l{https://github.com/Tulk6/internetsupermagazine}
 
 - Project:
     title: ncities5
     slug: ncities5
     desc: fifth (current) version of this site
-    content: >
+    richcontent: >
         19/02/26
         Here is the github -> \l{https://github.com/Tulk6/ncities5}
 
@@ -237,14 +282,19 @@
     url: https://metseditions.org/
     desc: middle english texts
 
+- Link:
+    title: bitsavers
+    url: https://bitsavers.org/
+    desc: archive of old software, manuals, magazines, and so on to do mostly with nonconsumer computing
+
 
 #<-----MEDIA------>
 - Media:
     category: book
     title: Tess of the D'Urbervilles
-    thumb: Y
+    thumbsup: true
     review: 🤯
-    desc: >
+    richcontent: >
         one of my favourite books ever. could talk adn talk about it but probs without saying much...
         the entirety of the book is full of a hazy overexposed glowing atmosphere which i am yet to find elsewhere,
         and the actual plot itself..
@@ -252,9 +302,9 @@
 - Media:
     category: book
     title: Catch 22
-    thumb: Y
+    thumbsup: true
     review: 🤩
-    desc: >
+    richcontent: >
         my other favourite book. similar to tess could talk a lot about it but unlike tess i think i could actually say something.
         very funny. funnier than any other book i've read and any movie or tv show or anything. and then all of a sudden the humour 
         drops away and your left alone in the night in rome or in the back of a bomber or with major major major major on the basketball
@@ -263,35 +313,84 @@
 - Media:
     category: series
     title: Buffy the Vampire Slayer
-    thumb: Y
+    thumbsup: true
     review: 🧛
-    desc: >
+    richcontent: >
         easily the best tv show. or maybe not easily but pretty easily. some people think the title sounds dumb and some people think the synopsis sounds 
-        dumb but trust me its not. the whole show just works incredibly
+        dumb but the whole show just works
 
 
 - Media:
     category: series
     title: Twin Peaks
-    thumb: Y
+    thumbsup: true
     review: 🗻
-    desc: >
+    richcontent: >
         i doubt i really have much to add. i love major garland briggs. 
 
 - Media:
     category: book
     title: Of Human Bondage
-    thumb: Y
+    thumbsup: true
     review: 🧥
-    desc: >
+    richcontent: >
         a character in buffy said this was their comfort book and idk if it quite is for me but it could be. i get it. something about it you could 
         just sink into and curl up.
 
 - Media:
     category: book
     title: Moby Dick
-    thumb: Y
+    thumbsup: true
     review: 🐳
-    desc: >
+    richcontent: >
         i LOVE moby dick. easily up there. i love ishmael. i love queequeg. i love that one scene in the spouter inn when they curl up and ishmael says 
-        that he feels like " the one warm spark in the heart of an arctic crystal" and thats how i feel sitting in the cold reading.
+        that he feels like "the one warm spark in the heart of an arctic crystal" and thats how i feel and think whenever its cold. i love how herman decides
+        that half way through his book would be a good time to explain his new whale theory. i like his whale theory. i was expecting a dense tome and 
+        it's def a tome but its so beautifully written and airy and aeried 
+
+- Media:
+    category: film
+    title: Sherlock Jr.
+    thumbsup: true
+    review: 💘
+    richcontent: >
+        i love buster keaton. i occasionally think of buster keaton and just start smiling. have you seen his face when he just stands there. he has that look on his face.
+        theres a scene in this movie where he's captaining a car on a river. i wish i were buster keaton. i saw this movie first with a live score
+        which i think added a lot. silent films were never rlly meant to be silent yk.
+
+- Media:
+    category: film
+    title: Nowhere (1997)
+    thumbsup: true
+    review: 👽
+    richcontent: >
+        for some reason i rlly love this movie. i didnt think i would as much as i did. its kinda stupid but it just worked for me. i love all the rooms
+        and all the dialogue and the whole vibe. im outta here...
+
+- Media:
+    category: music
+    title: Blaze Down His Way Like the Space Show - Burrrn
+    thumbsup: true
+    review: 🛰️
+    richcontent: >
+        i particularly like coming place and shut my eyes and picture story show and song without words. if you like shoegaze... have a unique sound 
+        i would argue especially evident on coming place. 
+
+- Media:
+    category: music
+    title: Live Nassau Coliseum '76 - David Bowie
+    thumbsup: true
+    review: 🧑‍🎤
+    richcontent: >
+        david bowie is my favourite musician ever and this is his best live album ever. arguably his best album ever only in as much as it has so many songs
+        from so many of his best albums yk. the version of five years in particular is great. all the cocaine he was doing some how made his voice
+        more emotional i think. i think i saw you in a ice cream parlour drinking milk shakes cold and long. smiling and waving and looking so fine. dont think you knew you were in my song. adn it was cold and it rained and i felt like an actor
+        
+- Media:
+    category: music
+    title: MELTING MOMENT - POiSON GiRL FRiEND
+    thumbsup: true
+    review: 🌆
+    richcontent: >
+        FACT 2 is very good. MELTING MOMENT (the song) is very good. makes me feel like cars driving past at night with headlights on. i 
+        saw her live in warsaw and she played falling by julie cruise.... how is she so cool.

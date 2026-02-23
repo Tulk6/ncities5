@@ -20,6 +20,7 @@
         <button onClick="reveal_issue();" id="reveal_button">☞REVEAL☜</button>
         <div id="issue_content">
         {{{content}}}
+        <p class="byline">playing: {{audio_title}}</p>
         <button onClick="mute_audio();" id="mute_button">MUTE</button>
         <iframe src="https://itisacrouton.atabook.org/" id="chatbox"></iframe>
         </div>

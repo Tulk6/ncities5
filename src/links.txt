@@ -14,8 +14,7 @@
 
         <div class='contents'>
             {{#Link}}
-            <h2><a href='{{url}}'>{{title}}</a></h2>
-            <p>&emsp;<i>{{desc}}</i></p>
+            <p><a href='{{url}}'>{{title}}</a>&emsp;{{desc}}</p>
             {{/Link}}
         </div>
     </div>

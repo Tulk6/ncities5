@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{Site.name}}</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class='centrewindow'>
+        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <hr>
+        {{#Media}}
+            <div class="mediaitem">
+                <h2>{{title}}</h2>
+                <p>rating: {{#thumbsup}}👍{{/thumbsup}}{{^thumbsup}}👎{{/thumbsup}}{{review}}</p>
+                {{{content}}}
+            </div>
+        {{/Media}}
+    </div>
+</body>
+</html>

@@ -9,7 +9,7 @@
     display: inline-block;
     vertical-align: top;
     margin-left: 2%;
-    max-width: 60%;
+    width: 60%;
 }
 
 .summarytext>h2{
