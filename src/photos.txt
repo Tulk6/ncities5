@@ -14,7 +14,7 @@
     <div class='centrewindow'>
         <h1><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
-
+        <h2>photos</h2>
         <div class='photogrid'>
 
         {{#Photo}}

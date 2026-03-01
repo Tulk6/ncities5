@@ -1,6 +1,7 @@
 :root {
     --fg-colour: #000000;
     --active-colour: #1654AF;
+    --bg-colour: #FFFFFF;
 }
 
 @font-face {
@@ -34,6 +35,13 @@
     src: url(fonts/simsun_subset.ttf);
 }
 
+body {
+    min-width: 800px;
+    font-family: cjk;
+    font-size: 14px;
+    background-color: var(--bg-colour);
+}
+
 h1 {
     font-family: junicode;
     font-size: 40pt;
@@ -47,12 +55,11 @@ h2 {
 
 p {
     font-family: cjk;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 a {
     color: var(--active-colour);
-    //text-decoration: none;
 }
 
 a:visited {
@@ -92,4 +99,28 @@ p > a {
 p.byline {
     font-family: arial;
 }
+
+.marqueecontainer {
+    hspace: 0px;
+}
+
+/*
+.window {
+    position: absolute;
+    border: 1px solid var(--fg-colour);
+    padding: 2px;
+    width: 60px;
+}
+
+.wleft {
+    left: 40px;
+}
+
+.wtop {
+    top: 260px;
+}
+
+.wright {
+    right: 40px;
+}*/
 

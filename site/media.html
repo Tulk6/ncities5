@@ -6,67 +6,184 @@
     <title>it IS a crouton</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="media.css">
+    <script src="../media.js"></script>
 </head>
 
 <body>
+    <div class"window wleft wtop">
+
+    </div>
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
-            <div class="mediaitem">
-                <h2>Tess of the D'Urbervilles</h2>
-                <p>rating: 👍🤯</p>
-                <p>one of my favourite books ever. could talk adn talk about it but probs without saying much... the entirety of the book is full of a hazy overexposed glowing atmosphere which i am yet to find elsewhere, and the actual plot itself..<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Catch 22</h2>
-                <p>rating: 👍🤩</p>
-                <p>my other favourite book. similar to tess could talk a lot about it but unlike tess i think i could actually say something. very funny. funnier than any other book i've read and any movie or tv show or anything. and then all of a sudden the humour  drops away and your left alone in the night in rome or in the back of a bomber or with major major major major on the basketball court. poor major major major major<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Buffy the Vampire Slayer</h2>
-                <p>rating: 👍🧛</p>
-                <p>easily the best tv show. or maybe not easily but pretty easily. some people think the title sounds dumb and some people think the synopsis sounds  dumb but the whole show just works<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Twin Peaks</h2>
-                <p>rating: 👍🗻</p>
-                <p>i doubt i really have much to add. i love major garland briggs. <br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Of Human Bondage</h2>
-                <p>rating: 👍🧥</p>
-                <p>a character in buffy said this was their comfort book and idk if it quite is for me but it could be. i get it. something about it you could  just sink into and curl up.<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Moby Dick</h2>
-                <p>rating: 👍🐳</p>
-                <p>i LOVE moby dick. easily up there. i love ishmael. i love queequeg. i love that one scene in the spouter inn when they curl up and ishmael says  that he feels like "the one warm spark in the heart of an arctic crystal" and thats how i feel and think whenever its cold. i love how herman decides that half way through his book would be a good time to explain his new whale theory. i like his whale theory. i was expecting a dense tome and  it's def a tome but its so beautifully written and airy and aeried <br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Sherlock Jr.</h2>
-                <p>rating: 👍💘</p>
-                <p>i love buster keaton. i occasionally think of buster keaton and just start smiling. have you seen his face when he just stands there. he has that look on his face. theres a scene in this movie where he's captaining a car on a river. i wish i were buster keaton. i saw this movie first with a live score which i think added a lot. silent films were never rlly meant to be silent yk.<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Nowhere (1997)</h2>
-                <p>rating: 👍👽</p>
-                <p>for some reason i rlly love this movie. i didnt think i would as much as i did. its kinda stupid but it just worked for me. i love all the rooms and all the dialogue and the whole vibe. im outta here...<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Blaze Down His Way Like the Space Show - Burrrn</h2>
-                <p>rating: 👍🛰️</p>
-                <p>i particularly like coming place and shut my eyes and picture story show and song without words. if you like shoegaze... have a unique sound  i would argue especially evident on coming place. <br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>Live Nassau Coliseum '76 - David Bowie</h2>
-                <p>rating: 👍🧑‍🎤</p>
-                <p>david bowie is my favourite musician ever and this is his best live album ever. arguably his best album ever only in as much as it has so many songs from so many of his best albums yk. the version of five years in particular is great. all the cocaine he was doing some how made his voice more emotional i think. i think i saw you in a ice cream parlour drinking milk shakes cold and long. smiling and waving and looking so fine. dont think you knew you were in my song. adn it was cold and it rained and i felt like an actor<br></p>
-            </div>
-            <div class="mediaitem">
-                <h2>MELTING MOMENT - POiSON GiRL FRiEND</h2>
-                <p>rating: 👍🌆</p>
-                <p>FACT 2 is very good. MELTING MOMENT (the song) is very good. makes me feel like cars driving past at night with headlights on. i  saw her live in warsaw and she played falling by julie cruise.... how is she so cool.<br></p>
-            </div>
+        <h2>media</h2>
+        <p>Hello! this is my media log. Right now I only have my favourites but I'm hoping to add some not favourites soon.</p>
+        <p>The rating scheme is this - i don't believe in stars so each thing is either thumbs up (good!) or thumbs down (bad¡). And each gets an emoji to summarise my thoughts</p>
+        <p>If you click on any row as well, it will reveal a fuller review (but dont expect any roger ebert yk)</p>
+        <form id="filterform">
+        <div id="filterdiv">
+            <label for="all_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="all_radio" checked="checked">all</label>
+            <label for="book_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="book_radio">book</label>
+            <label for="film_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="film_radio">film</label> 
+            <label for="series_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="series_radio">series</label>
+            <label for="music_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="music_radio">music</label>
+            <label for="favourite_check"><input type="checkbox" name="favouritefilter" onClick="update_filters();" id="favourite_check">fave</label>
+        </div>
+        </form>
+        <table id="mediatable">
+            <colgroup>
+                <col span="1" style="width: 30%;">
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>title</th>
+                    <th>author</th>
+                    <th>thumb</th>
+                    <th>emoji</th>
+                    <th>date</th>
+                    <th>tags</th>
+                </tr>
+            </thead>
+            <tbody id="mediatablebody">
+                    <tr class="mediasummary" id="The Woman in the Dunes" onClick="reveal_review(&quot;The Woman in the Dunes&quot;);">
+                        <td class="itemtitle"><a>The Woman in the Dunes</a></td>
+                        <td>Kōbō Abe</td>
+                        <td>👍</td>
+                        <td>🤔</td>
+                        <td>25 - 26 Feb 2026</td>
+                        <td>book</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>enjoyed it. for some reason even though I find Kobo Abe's writing kinda offputting at times (intentionally)  i find it very quick to read. he seems to like to be very visceral. in this book less so than in The Ark Sakura  but all the same. always wonder whether the dialogue is so halting because of the translation or the actual writing itself. also the main characters in this and the ark sakura are very similar. both sorta odd and interested in bugs... makes you wonder. the whole metaphysical aspect interesting but not mind blowing or particularly emotive. more raises things to be considered than  immerses you in their consideration.<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Tess of the D'Urbervilles" onClick="reveal_review(&quot;Tess of the D'Urbervilles&quot;);">
+                        <td class="itemtitle"><a>Tess of the D'Urbervilles</a></td>
+                        <td>Thomas Hardy</td>
+                        <td>👍</td>
+                        <td>🤯</td>
+                        <td></td>
+                        <td>book,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>one of my favourite books ever. could talk adn talk about it but probs without saying much... the entirety of the book is full of a hazy overexposed glowing atmosphere which i am yet to find elsewhere, and the actual plot itself..<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Catch 22" onClick="reveal_review(&quot;Catch 22&quot;);">
+                        <td class="itemtitle"><a>Catch 22</a></td>
+                        <td>Joseph Heller</td>
+                        <td>👍</td>
+                        <td>🤩</td>
+                        <td></td>
+                        <td>book,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>my other favourite book. similar to tess could talk a lot about it but unlike tess i think i could actually say something. very funny. funnier than any other book i've read and any movie or tv show or anything. and then all of a sudden the humour  drops away and your left alone in the night in rome or in the back of a bomber or with major major major major on the basketball court. poor major major major major<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Buffy the Vampire Slayer" onClick="reveal_review(&quot;Buffy the Vampire Slayer&quot;);">
+                        <td class="itemtitle"><a>Buffy the Vampire Slayer</a></td>
+                        <td>Sarah Michelle Gellar</td>
+                        <td>👍</td>
+                        <td>🧛</td>
+                        <td></td>
+                        <td>series,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>easily the best tv show. or maybe not easily but pretty easily. some people think the title sounds dumb and some people think the synopsis sounds  dumb but the whole show just works<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Twin Peaks" onClick="reveal_review(&quot;Twin Peaks&quot;);">
+                        <td class="itemtitle"><a>Twin Peaks</a></td>
+                        <td>David Lynch</td>
+                        <td>👍</td>
+                        <td>🗻</td>
+                        <td></td>
+                        <td>series,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>i doubt i really have much to add. i love major garland briggs. <br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Of Human Bondage" onClick="reveal_review(&quot;Of Human Bondage&quot;);">
+                        <td class="itemtitle"><a>Of Human Bondage</a></td>
+                        <td>W. Somerset Maugham</td>
+                        <td>👍</td>
+                        <td>🧥</td>
+                        <td></td>
+                        <td>book,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>a character in buffy said this was their comfort book and idk if it quite is for me but it could be. i get it. something about it you could  just sink into and curl up.<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Moby Dick" onClick="reveal_review(&quot;Moby Dick&quot;);">
+                        <td class="itemtitle"><a>Moby Dick</a></td>
+                        <td>Herman Melville</td>
+                        <td>👍</td>
+                        <td>🐳</td>
+                        <td></td>
+                        <td>book,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>i LOVE moby dick. easily up there. i love ishmael. i love queequeg. i love that one scene in the spouter inn when they curl up and ishmael says  that he feels like "the one warm spark in the heart of an arctic crystal" and thats how i feel and think whenever its cold. i love how herman decides that half way through his book would be a good time to explain his new whale theory. i like his whale theory. i was expecting a dense tome and  it's def a tome but its so beautifully written and airy and aeried <br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Sherlock Jr." onClick="reveal_review(&quot;Sherlock Jr.&quot;);">
+                        <td class="itemtitle"><a>Sherlock Jr.</a></td>
+                        <td>Buster Keaton</td>
+                        <td>👍</td>
+                        <td>💘</td>
+                        <td></td>
+                        <td>film,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>i love buster keaton. i occasionally think of buster keaton and just start smiling. have you seen his face when he just stands there. he has that look on his face. theres a scene in this movie where he's captaining a car on a river. i wish i were buster keaton. i saw this movie first with a live score which i think added a lot. silent films were never rlly meant to be silent yk.<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Nowhere" onClick="reveal_review(&quot;Nowhere&quot;);">
+                        <td class="itemtitle"><a>Nowhere</a></td>
+                        <td>Gregg Araki</td>
+                        <td>👍</td>
+                        <td>👽</td>
+                        <td></td>
+                        <td>film,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>for some reason i rlly love this movie. i didnt think i would as much as i did. its kinda stupid but it just worked for me. i love all the rooms and all the dialogue and the whole vibe. im outta here...<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Blaze Down His Way Like the Space Show" onClick="reveal_review(&quot;Blaze Down His Way Like the Space Show&quot;);">
+                        <td class="itemtitle"><a>Blaze Down His Way Like the Space Show</a></td>
+                        <td>Burrrn</td>
+                        <td>👍</td>
+                        <td>🛰️</td>
+                        <td></td>
+                        <td>music,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>i particularly like coming place and shut my eyes and picture story show and song without words. if you like shoegaze... have a unique sound  i would argue especially evident on coming place. <br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="Live Nassau Coliseum &#39;76" onClick="reveal_review(&quot;Live Nassau Coliseum &amp;#39;76&quot;);">
+                        <td class="itemtitle"><a>Live Nassau Coliseum &#39;76</a></td>
+                        <td>David Bowie</td>
+                        <td>👍</td>
+                        <td>🧑‍🎤</td>
+                        <td></td>
+                        <td>music,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>david bowie is my favourite musician ever and this is his best live album ever. arguably his best album ever only in as much as it has so many songs from so many of his best albums yk. the version of five years in particular is great. all the cocaine he was doing some how made his voice more emotional i think. i think i saw you in a ice cream parlour drinking milk shakes cold and long. smiling and waving and looking so fine. dont think you knew you were in my song. adn it was cold and it rained and i felt like an actor<br></p></td>
+                    </tr>
+                    <tr class="mediasummary" id="MELTING MOMENT" onClick="reveal_review(&quot;MELTING MOMENT&quot;);">
+                        <td class="itemtitle"><a>MELTING MOMENT</a></td>
+                        <td>POiSON GiRL FRiEND</td>
+                        <td>👍</td>
+                        <td>🌆</td>
+                        <td></td>
+                        <td>music,fave</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6><p>FACT 2 is very good. MELTING MOMENT (the song) is very good. makes me feel like cars driving past at night with headlights on. i  saw her live in warsaw and she played falling by julie cruise.... how is she so cool.<br></p></td>
+                    </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

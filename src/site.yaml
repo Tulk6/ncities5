@@ -1,12 +1,14 @@
 #need to add
 #    currently reading watching etc
-#    fix media log
-#    improve about page
+#    fix media log -> dates, loved, filtering
+#    ------improve about page
 #    find room for more colour
 #    switch to css grid??
-#    add a welcome section
+#    -----add a welcome section
 #    add links to profiles
 #    theme overhaul...
+
+#    add custom gif emojis in my markup lang
 
 - Site:
     pages: 
@@ -35,8 +37,17 @@
     name: it IS a crouton
 
 
-
 #<------UPDATES------>
+- Update:
+    title: media page and o week
+    date: 2026-02-25 18:58
+    content: have made the media bit more functional and had my uni o-week!
+    
+- Update:
+    title: new homepage slightly
+    date: 2026-02-23 17:10
+    content: have gotten rid of h2s on homepage and made all the links blue... let me know if its an improvement
+    
 - Update:
     title: new photos
     date: 2026-02-23 11:43
@@ -129,6 +140,13 @@
 
 
 #<-----PROJECTS------>
+- Project:
+    title: my font
+    slug: myfont
+    desc: a sans-serif pixel font i made
+    richcontent: |
+        made a font.
+        
 - Project:
     title: internetsupermagazine
     slug: internetsupermagazine
@@ -290,8 +308,24 @@
 
 #<-----MEDIA------>
 - Media:
-    category: book
+    tags: book
+    title: The Woman in the Dunes
+    author: Kōbō Abe
+    thumbsup: true
+    review: 🤔
+    daterange: 25 - 26 Feb 2026
+    richcontent: >
+        enjoyed it. for some reason even though I find Kobo Abe's writing kinda offputting at times (intentionally) 
+        i find it very quick to read. he seems to like to be very visceral. in this book less so than in The Ark Sakura 
+        but all the same. always wonder whether the dialogue is so halting because of the translation or the actual writing itself.
+        also the main characters in this and the ark sakura are very similar. both sorta odd and interested in bugs... makes you wonder.
+        the whole metaphysical aspect interesting but not mind blowing or particularly emotive. more raises things to be considered than 
+        immerses you in their consideration.
+        
+- Media:
+    tags: book,fave
     title: Tess of the D'Urbervilles
+    author: Thomas Hardy
     thumbsup: true
     review: 🤯
     richcontent: >
@@ -300,8 +334,9 @@
         and the actual plot itself..
 
 - Media:
-    category: book
+    tags: book,fave
     title: Catch 22
+    author: Joseph Heller
     thumbsup: true
     review: 🤩
     richcontent: >
@@ -311,8 +346,9 @@
         court. poor major major major major
 
 - Media:
-    category: series
+    tags: series,fave
     title: Buffy the Vampire Slayer
+    author: Sarah Michelle Gellar
     thumbsup: true
     review: 🧛
     richcontent: >
@@ -321,16 +357,18 @@
 
 
 - Media:
-    category: series
+    tags: series,fave
     title: Twin Peaks
+    author: David Lynch
     thumbsup: true
     review: 🗻
     richcontent: >
         i doubt i really have much to add. i love major garland briggs. 
 
 - Media:
-    category: book
+    tags: book,fave
     title: Of Human Bondage
+    author: W. Somerset Maugham
     thumbsup: true
     review: 🧥
     richcontent: >
@@ -338,8 +376,9 @@
         just sink into and curl up.
 
 - Media:
-    category: book
+    tags: book,fave
     title: Moby Dick
+    author: Herman Melville
     thumbsup: true
     review: 🐳
     richcontent: >
@@ -349,8 +388,9 @@
         it's def a tome but its so beautifully written and airy and aeried 
 
 - Media:
-    category: film
+    tags: film,fave
     title: Sherlock Jr.
+    author: Buster Keaton
     thumbsup: true
     review: 💘
     richcontent: >
@@ -359,8 +399,9 @@
         which i think added a lot. silent films were never rlly meant to be silent yk.
 
 - Media:
-    category: film
-    title: Nowhere (1997)
+    tags: film,fave
+    title: Nowhere
+    author: Gregg Araki
     thumbsup: true
     review: 👽
     richcontent: >
@@ -368,8 +409,9 @@
         and all the dialogue and the whole vibe. im outta here...
 
 - Media:
-    category: music
-    title: Blaze Down His Way Like the Space Show - Burrrn
+    tags: music,fave
+    title: Blaze Down His Way Like the Space Show
+    author: Burrrn
     thumbsup: true
     review: 🛰️
     richcontent: >
@@ -377,8 +419,9 @@
         i would argue especially evident on coming place. 
 
 - Media:
-    category: music
-    title: Live Nassau Coliseum '76 - David Bowie
+    tags: music,fave
+    title: Live Nassau Coliseum &#39;76
+    author: David Bowie
     thumbsup: true
     review: 🧑‍🎤
     richcontent: >
@@ -387,8 +430,9 @@
         more emotional i think. i think i saw you in a ice cream parlour drinking milk shakes cold and long. smiling and waving and looking so fine. dont think you knew you were in my song. adn it was cold and it rained and i felt like an actor
         
 - Media:
-    category: music
-    title: MELTING MOMENT - POiSON GiRL FRiEND
+    tags: music,fave
+    title: MELTING MOMENT
+    author: POiSON GiRL FRiEND
     thumbsup: true
     review: 🌆
     richcontent: >

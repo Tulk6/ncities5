@@ -12,6 +12,7 @@
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
+        <h2>updates</h2>
         {{#Update}}
         <div class='blogentry'>
             <h2>{{title}}</h2><p class="byline">{{date}}</p><p>{{content}}</p>

@@ -13,7 +13,6 @@
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='index.html'>CARD.BATT</a></h1>
         <hr>
-
         {{#Issue}}
         <div class='summary'>
             <img src='{{thumbnail}}'>

@@ -11,9 +11,8 @@
 
 <body>
     <div class='centrewindow'>
-        <h1><a href='index.html'>ITISACROUTON</a></h1>
+        <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
-
         {{#Project}}
         <div class='summary'>
             <h2><a href="projects/{{slug}}.html">{{title}}</a></h2>

@@ -18,3 +18,7 @@ marquee {
     width: 100%;
     margin: 2px;
 }
+
+h2 {
+    white-space: nowrap;
+}

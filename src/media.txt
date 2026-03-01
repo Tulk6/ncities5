@@ -6,19 +6,65 @@
     <title>{{Site.name}}</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="media.css">
+    <script src="../media.js"></script>
 </head>
 
 <body>
+    <div class"window wleft wtop">
+
+    </div>
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
-        {{#Media}}
-            <div class="mediaitem">
-                <h2>{{title}}</h2>
-                <p>rating: {{#thumbsup}}👍{{/thumbsup}}{{^thumbsup}}👎{{/thumbsup}}{{review}}</p>
-                {{{content}}}
-            </div>
-        {{/Media}}
+        <h2>media</h2>
+        <p>Hello! this is my media log. Right now I only have my favourites but I'm hoping to add some not favourites soon.</p>
+        <p>The rating scheme is this - i don't believe in stars so each thing is either thumbs up (good!) or thumbs down (bad¡). And each gets an emoji to summarise my thoughts</p>
+        <p>If you click on any row as well, it will reveal a fuller review (but dont expect any roger ebert yk)</p>
+        <form id="filterform">
+        <div id="filterdiv">
+            <label for="all_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="all_radio" checked="checked">all</label>
+            <label for="book_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="book_radio">book</label>
+            <label for="film_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="film_radio">film</label> 
+            <label for="series_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="series_radio">series</label>
+            <label for="music_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="music_radio">music</label>
+            <label for="favourite_check"><input type="checkbox" name="favouritefilter" onClick="update_filters();" id="favourite_check">fave</label>
+        </div>
+        </form>
+        <table id="mediatable">
+            <colgroup>
+                <col span="1" style="width: 30%;">
+                <col span="1" style="width: 15%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>title</th>
+                    <th>author</th>
+                    <th>thumb</th>
+                    <th>emoji</th>
+                    <th>date</th>
+                    <th>tags</th>
+                </tr>
+            </thead>
+            <tbody id="mediatablebody">
+                {{#Media}}
+                    <tr class="mediasummary" id="{{{title}}}" onClick="reveal_review(&quot;{{title}}&quot;);">
+                        <td class="itemtitle"><a>{{{title}}}</a></td>
+                        <td>{{author}}</td>
+                        <td>{{#thumbsup}}👍{{/thumbsup}}{{^thumbsup}}👎{{/thumbsup}}</td>
+                        <td>{{review}}</td>
+                        <td>{{daterange}}</td>
+                        <td>{{tags}}</td>
+                    </tr>
+                    <tr class="mediacontent">
+                        <td colspan=6>{{{content}}}</td>
+                    </tr>
+                {{/Media}}
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
