@@ -1,29 +1,23 @@
-#mediatable {
-    font-family: cjk;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    column-width: auto;
+.mediagrid {
 }
 
-th {
-    text-align: left;
-    font-family: hiroshige;
+.mediaitem {
+    width: 144px;
+    height: 144px;
+    float: left;
+    padding: 2px;
+    border: 1px lightgray dashed;
 }
 
-td {
-    vertical-align: top;
-    text-align: left;
-    border-width: 1px 0px 1px 0px;
-    border-style: solid;
-    border-color: var(--fg-colour);
+.mediacover {
+    height: 100%;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
-.itemtitle {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.mediacontent {
+.content {
+    overflow: scroll;
     display: none;
 }

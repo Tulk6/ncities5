@@ -19,7 +19,7 @@
         <h2>media</h2>
         <p>Hello! this is my media log. Right now I only have my favourites but I'm hoping to add some not favourites soon.</p>
         <p>The rating scheme is this - i don't believe in stars so each thing is either thumbs up (good!) or thumbs down (bad¡). And each gets an emoji to summarise my thoughts</p>
-        <p>If you click on any row as well, it will reveal a fuller review (but dont expect any roger ebert yk)</p>
+        <p>click on an image to see more!</p>
         <form id="filterform">
         <div id="filterdiv">
             <label for="all_radio"><input type="radio" name="tagfilter" onClick="update_filters();" id="all_radio" checked="checked">all</label>
@@ -30,41 +30,16 @@
             <label for="favourite_check"><input type="checkbox" name="favouritefilter" onClick="update_filters();" id="favourite_check">fave</label>
         </div>
         </form>
-        <table id="mediatable">
-            <colgroup>
-                <col span="1" style="width: 30%;">
-                <col span="1" style="width: 15%;">
-                <col span="1" style="width: 10%;">
-                <col span="1" style="width: 10%;">
-                <col span="1" style="width: 10%;">
-                <col span="1" style="width: 15%;">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>title</th>
-                    <th>author</th>
-                    <th>thumb</th>
-                    <th>emoji</th>
-                    <th>date</th>
-                    <th>tags</th>
-                </tr>
-            </thead>
-            <tbody id="mediatablebody">
-                {{#Media}}
-                    <tr class="mediasummary" id="{{{title}}}" onClick="reveal_review(&quot;{{title}}&quot;);">
-                        <td class="itemtitle"><a>{{{title}}}</a></td>
-                        <td>{{author}}</td>
-                        <td>{{#thumbsup}}👍{{/thumbsup}}{{^thumbsup}}👎{{/thumbsup}}</td>
-                        <td>{{review}}</td>
-                        <td>{{daterange}}</td>
-                        <td>{{tags}}</td>
-                    </tr>
-                    <tr class="mediacontent">
-                        <td colspan=6>{{{content}}}</td>
-                    </tr>
-                {{/Media}}
-            </tbody>
-        </table>
+        <div class = "mediagrid">
+            {{#Media}}
+            <div class="mediaitem summary" onClick="reveal_review({{slug}});" id="{{slug}}">
+                <img src="/covers/{{slug}}.jpg" class="mediacover">
+            </div>
+            <div class="mediaitem content">
+                {{{content}}}
+            </div>
+            {{/Media}}
+        </div>
     </div>
 </body>
 </html>

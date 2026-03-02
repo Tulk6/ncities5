@@ -1,7 +1,7 @@
 :root {
     --fg-colour: #000000;
     --active-colour: #1654AF;
-    --bg-colour: #FFFFFF;
+    --bg-colour: #FFFFFFAA;
 }
 
 @font-face {
@@ -36,10 +36,11 @@
 }
 
 body {
-    min-width: 800px;
     font-family: cjk;
     font-size: 14px;
-    background-color: var(--bg-colour);
+    /*background-color: var(--bg-colour);*/
+    background-image: url("background.jpg");
+    background-attachment: fixed;
 }
 
 h1 {
@@ -60,6 +61,8 @@ p {
 
 a {
     color: var(--active-colour);
+    text-shadow: 2px 2px 2px white;
+    background-image: url("fish.png");
 }
 
 a:visited {
@@ -79,6 +82,11 @@ p > a {
     color: var(--fg-colour);
 }*/
 
+#sitetitle {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
 #sitetitle > a{
     color: var(--fg-colour);
     text-decoration: none;
@@ -94,6 +102,9 @@ p > a {
     margin-right: auto;
     margin-left: auto;
     margin-top: 100px;
+    background-color: var(--bg-colour);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 p.byline {
@@ -102,6 +113,13 @@ p.byline {
 
 .marqueecontainer {
     hspace: 0px;
+}
+
+#fish {
+    float:right;
+    height:80px;
+    width:auto;
+    margin: 30px;
 }
 
 /*

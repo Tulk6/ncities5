@@ -39,6 +39,11 @@
 
 #<------UPDATES------>
 - Update:
+    title: my site is now fish themed
+    date: 2026-03-02 16:30
+    content: ive made my site fish themed... idk if it will stay this way
+    
+- Update:
     title: media page and o week
     date: 2026-02-25 18:58
     content: have made the media bit more functional and had my uni o-week!
@@ -314,6 +319,7 @@
     thumbsup: true
     review: 🤔
     daterange: 25 - 26 Feb 2026
+    slug: dunes
     richcontent: >
         enjoyed it. for some reason even though I find Kobo Abe's writing kinda offputting at times (intentionally) 
         i find it very quick to read. he seems to like to be very visceral. in this book less so than in The Ark Sakura 
@@ -328,6 +334,7 @@
     author: Thomas Hardy
     thumbsup: true
     review: 🤯
+    slug: tess
     richcontent: >
         one of my favourite books ever. could talk adn talk about it but probs without saying much...
         the entirety of the book is full of a hazy overexposed glowing atmosphere which i am yet to find elsewhere,
@@ -339,6 +346,7 @@
     author: Joseph Heller
     thumbsup: true
     review: 🤩
+    slug: catch22
     richcontent: >
         my other favourite book. similar to tess could talk a lot about it but unlike tess i think i could actually say something.
         very funny. funnier than any other book i've read and any movie or tv show or anything. and then all of a sudden the humour 
@@ -351,6 +359,7 @@
     author: Sarah Michelle Gellar
     thumbsup: true
     review: 🧛
+    slug: buffy
     richcontent: >
         easily the best tv show. or maybe not easily but pretty easily. some people think the title sounds dumb and some people think the synopsis sounds 
         dumb but the whole show just works
@@ -362,6 +371,7 @@
     author: David Lynch
     thumbsup: true
     review: 🗻
+    slug: twinpeaks
     richcontent: >
         i doubt i really have much to add. i love major garland briggs. 
 
@@ -371,6 +381,7 @@
     author: W. Somerset Maugham
     thumbsup: true
     review: 🧥
+    slug: ofhumanbondage
     richcontent: >
         a character in buffy said this was their comfort book and idk if it quite is for me but it could be. i get it. something about it you could 
         just sink into and curl up.
@@ -381,6 +392,7 @@
     author: Herman Melville
     thumbsup: true
     review: 🐳
+    slug: mobydick
     richcontent: >
         i LOVE moby dick. easily up there. i love ishmael. i love queequeg. i love that one scene in the spouter inn when they curl up and ishmael says 
         that he feels like "the one warm spark in the heart of an arctic crystal" and thats how i feel and think whenever its cold. i love how herman decides
@@ -393,6 +405,7 @@
     author: Buster Keaton
     thumbsup: true
     review: 💘
+    slug: sherlockjr
     richcontent: >
         i love buster keaton. i occasionally think of buster keaton and just start smiling. have you seen his face when he just stands there. he has that look on his face.
         theres a scene in this movie where he's captaining a car on a river. i wish i were buster keaton. i saw this movie first with a live score
@@ -404,6 +417,7 @@
     author: Gregg Araki
     thumbsup: true
     review: 👽
+    slug: nowhere
     richcontent: >
         for some reason i rlly love this movie. i didnt think i would as much as i did. its kinda stupid but it just worked for me. i love all the rooms
         and all the dialogue and the whole vibe. im outta here...
@@ -414,6 +428,7 @@
     author: Burrrn
     thumbsup: true
     review: 🛰️
+    slug: burrrn
     richcontent: >
         i particularly like coming place and shut my eyes and picture story show and song without words. if you like shoegaze... have a unique sound 
         i would argue especially evident on coming place. 
@@ -424,6 +439,7 @@
     author: David Bowie
     thumbsup: true
     review: 🧑‍🎤
+    slug: nassau
     richcontent: >
         david bowie is my favourite musician ever and this is his best live album ever. arguably his best album ever only in as much as it has so many songs
         from so many of his best albums yk. the version of five years in particular is great. all the cocaine he was doing some how made his voice
@@ -435,6 +451,7 @@
     author: POiSON GiRL FRiEND
     thumbsup: true
     review: 🌆
+    slug: meltingmoment
     richcontent: >
         FACT 2 is very good. MELTING MOMENT (the song) is very good. makes me feel like cars driving past at night with headlights on. i 
         saw her live in warsaw and she played falling by julie cruise.... how is she so cool.

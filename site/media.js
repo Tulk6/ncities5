@@ -18,17 +18,17 @@ function update_filters(){
 }
 
 function filter_media(tags){
-    var media_table_body = document.getElementById("mediatablebody");
-    for (var row of media_table_body.children){
-        if (row.className == "mediasummary"){
-            row.style.display = 'table-row';
+    var media_table_body = document.getElementById("mediagrid");
+    for (var element of media_table_body.children){
+        if (element.className == "mediaitem"){
+            row.style.display = 'block';
         }else{
             row.style.display = 'none';
         }
     }
     for (var tag of tags){
         for (var row of media_table_body.children){
-            if (row.className == "mediacontent"){
+            if (row.className == "mediaitem"){
                 continue;
             }
             var row_tags = row.children[5].innerHTML.split(',');
@@ -39,11 +39,12 @@ function filter_media(tags){
     }
 }
 
-function reveal_review(title){
-    for (var element of document.getElementsByClassName("mediacontent")){
+function reveal_review(slug){
+    for (var element of document.getElementsByClassName("content")){
         element.style.display = 'none';
     }
-    var summary_row = document.getElementById(title);
-    console.log(summary_row);
-    summary_row.nextElementSibling.style.display = 'table-row';
+    //console.log(slug)
+    //var summary_div = document.getElementById(slug);
+    //console.log(summary_div);
+    slug.nextElementSibling.style.display = 'block';
 }
