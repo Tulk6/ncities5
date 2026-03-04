@@ -7,9 +7,11 @@
 <link type="text/css" rel="stylesheet" href="../style.css">
 <link type="text/css" rel="stylesheet" href="../issue.css">
 <script src="../issue.js"></script>
+<script src="../scripts.js"></script>
 </head>
 
 <body>
+    <img id="cursorgif" src="/images/cursor.gif">
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='../index.html'>ITISACROUTON</a></h1>
         <hr>
@@ -20,7 +22,7 @@
         <button onClick="reveal_issue();" id="reveal_button">☞REVEAL☜</button>
         <div id="issue_content">
         {{{content}}}
-        <p class="byline">playing: {{audio_title}}</p>
+        <p class="byline">playing: <a href="{{audio_link}}">{{audio_title}}</a></p>
         <button onClick="mute_audio();" id="mute_button">MUTE</button>
         <iframe src="https://itisacrouton.atabook.org/" id="chatbox"></iframe>
         </div>

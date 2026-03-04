@@ -99,6 +99,7 @@
     desc: got new cameras..
     audio: https://od.lk/s/MjlfNTk1ODE2Mzdf/peaches.mp3
     audio_title: peaches.mp3
+    audio_link: https://totalwife.bandcamp.com/track/peaches
     #peaches
     richcontent: |
         \i{100_6206.jpg}
@@ -123,8 +124,9 @@
     slug: nzny
     date: 2025-01-07 16:00
     desc: first webpost!
-    audio: https://od.lk/s/MjlfNTg0MTM0OTNf/when_things_come_falling_down.mp3
+    audio: https://od.lk/s/MjlfNTg0MTM0OTNf/when_things_come_falling.mp3
     audio_title: when_things_come_falling_down.mp3
+    audio_link: https://internetandweed.bandcamp.com/track/when-things-come-falling
     richcontent: |
         \i{DSCF0228.jpg}
         \i{DSCF0025.jpg}
@@ -312,6 +314,26 @@
 
 
 #<-----MEDIA------>
+- Media:
+    tags: book
+    title: The Chrysalids
+    author: John Wyndham
+    thumbsup: true
+    review: 🔚
+    daterange: 27 Feb - 03 Mar 2026
+    slug: chrysalids
+    richcontent: >
+        Good book. Close to being a favourite, but I think that, like a lot of other sci-fi, it's weakened a little by the reveal, and by over 
+        explanation. greatest strength is the atmosphere and vibe in the beginning of a post apocalyptic christian fundamentalist eugenicist 
+        xenophobic society and the way that it \b{isnt} explained. just how creepy and weird and so on it is is allowed to reveal itself
+        over the course of the first section without any explanation or info dumping. there is no need to tell the reader (hopefully) that 
+        such a society would be rlly shit and happily wyndham doesnt. but then the book sorta draws away from that into (SPOILER) telepathic children escaping
+        hiding and a deus ex machina with people from new zealand. the book works best when things are not explained and you're just left to 
+        contemplate life in such a society (and its implications for our society) and works worst when you're distracted from that by a semigeneric
+        chase sequence with the occasional massive tree or fungus. but when it was working well it was working very well and when it was working 
+        not as well it was still enjoyable. One thing very good about The Woman in the Dunes - would have been easy for the dude to escape half way
+        through the book and then have the rest be him being chased with the occasional mention of dunes but that isnt how it goes!
+        
 - Media:
     tags: book
     title: The Woman in the Dunes

@@ -7,9 +7,11 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="media.css">
     <script src="../media.js"></script>
+    <script src="../scripts.js"></script>
 </head>
 
 <body>
+    <img id="cursorgif" src="/images/cursor.gif">
     <div class"window wleft wtop">
 
     </div>
@@ -17,6 +19,7 @@
         <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
         <hr>
         <h2>media</h2>
+        <p>IGNORE THIS BIT RN: its very broken and barely functional and more or less empty...</p>
         <p>Hello! this is my media log. Right now I only have my favourites but I'm hoping to add some not favourites soon.</p>
         <p>The rating scheme is this - i don't believe in stars so each thing is either thumbs up (good!) or thumbs down (bad¡). And each gets an emoji to summarise my thoughts</p>
         <p>click on an image to see more!</p>
@@ -32,10 +35,10 @@
         </form>
         <div class = "mediagrid">
             {{#Media}}
-            <div class="mediaitem summary" onClick="reveal_review({{slug}});" id="{{slug}}">
-                <img src="/covers/{{slug}}.jpg" class="mediacover">
+            <div class="mediasummary" onClick="reveal_review({{slug}});" id="{{slug}}">
+                <img src="/images/covers/{{slug}}.jpg" class="mediacover">
             </div>
-            <div class="mediaitem content">
+            <div class="mediacontent">
                 {{{content}}}
             </div>
             {{/Media}}

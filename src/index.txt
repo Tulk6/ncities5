@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <title>{{Site.name}}</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="../scripts.js"></script>
+    <script src="../scripts.js"></script>
 </head>
 
-<body>   
+<body>
+    <img id="cursorgif" src="/images/cursor.gif">
     <div class='centrewindow'>
         <h1 id="sitetitle"><a href='index.html'>ITISACROUTON</a></h1>
-        <img src="fish1.gif" id="fish">
+        <img src="images/fish1.gif" id="fish">
         <p class="byline">{{Site.status}}</p>
         <hr>
         <div class='contents'>

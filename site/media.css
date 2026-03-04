@@ -1,7 +1,15 @@
 .mediagrid {
 }
 
-.mediaitem {
+.mediacontent {
+    width: 144px;
+    height: 144px;
+    float: left;
+    padding: 2px;
+    border: 1px lightgray dashed;
+}
+
+.mediasummary {
     width: 144px;
     height: 144px;
     float: left;
@@ -15,9 +23,4 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
-}
-
-.content {
-    overflow: scroll;
-    display: none;
 }

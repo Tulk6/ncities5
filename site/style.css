@@ -4,9 +4,11 @@
     --bg-colour: #FFFFFFAA;
 }
 
+
+
 @font-face {
     font-family: junicode;
-	src: url(fonts/Junicode-CondLight.otf);
+	src: url(fonts/Junicode-CondLight-subset.ttf);
 }
 
 @font-face {
@@ -39,8 +41,10 @@ body {
     font-family: cjk;
     font-size: 14px;
     /*background-color: var(--bg-colour);*/
-    background-image: url("background.jpg");
+    background-image: url("/images/background.jpg");
     background-attachment: fixed;
+    background-size: 100% 100%;
+    cursor: url("/images/cursor.gif");
 }
 
 h1 {
@@ -62,7 +66,6 @@ p {
 a {
     color: var(--active-colour);
     text-shadow: 2px 2px 2px white;
-    background-image: url("fish.png");
 }
 
 a:visited {
@@ -120,6 +123,12 @@ p.byline {
     height:80px;
     width:auto;
     margin: 30px;
+}
+
+#cursorgif {
+    position: absolute;
+    width: 50px;
+    height: 50px;
 }
 
 /*

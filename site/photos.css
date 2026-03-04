@@ -2,10 +2,11 @@
 .photogrid {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .photoitem {
-    width: 30%;
+    width: 32%;
     aspect-ratio: 1/1;
     border-width: 1px;
     padding: 1px 1px 1px 1px;
